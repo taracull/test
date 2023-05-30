@@ -3,126 +3,36 @@
 
 <head>
     <title>Data Table Example</title>
-    <style>
-        @font-face {
-            font-family: 'MazdaType';
-            src: url('MazdaType-Regular.otf') format('opentype');
-        }
-
-        @font-face {
-            font-family: 'MazdaType-Bold';
-            src: url('MazdaType-Bold.otf') format('opentype');
-            font-weight: bold;
-        }
-
-        body {
-            font-family: 'MazdaType', sans-serif;
-        }
-
-        /* Style the container */
-        .container {
-            padding: 30px;
-        }
-
-        /* Style the table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: 'MazdaType', sans-serif;
-            border: 1px solid black; /* Add a black border to the table */
-        }
-
-        /* Style the table header */
-        thead th {
-            background-color: #851d2f; /* Change the background color of the table headings */
-            color: white; /* Change the text color of the table headings */
-            padding: 20px;
-            text-align: left;
-            font-weight: bold;
-        }
-
-        /* Style the table body */
-        tbody td {
-            border: 1px solid black;
-            padding: 10px;
-        }
-
-        /* Alternate row colors in the table body */
-        tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        /* Style the drop-down menus */
-        select {
-            padding: 6px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-top: 10px; /* Add gap between the header image and dropdown menus */
-            font-family: 'MazdaType', sans-serif; /* Set font-family for dropdown menus */
-        }
-
-        /* Style the header image */
-        .header-image {
-            background-image: url('Mazdaute.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh; /* Set the background image height to 100% viewport height */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-        }
-
-        /* Style the header heading */
-        .header-heading {
-            font-family: 'MazdaType-Bold', sans-serif;
-            font-size: 60px; /* Increase the font size for a larger header */
-            line-height: 1.5;
-            margin: 0;
-            font-weight: bold;
-            text-transform: uppercase; /* Convert text to uppercase */
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <div class="header-image">
-        <div class="container">
-            <h1 class="header-heading">Five Pillars<br>Accessory Guide</h1>
-        </div>
-    </div>
+    <label for="carModel">Car Model:</label>
+    <select id="carModel" onchange="loadTableData()">
+        <!-- Populate options dynamically from the database -->
+    </select>
 
-    <div class="container">
-        <label for="carModel">Car Model:</label>
-        <select id="carModel" onchange="loadTableData()">
-            <!-- Populate options dynamically from the database -->
-        </select>
+    <label for="accessory">Accessory:</label>
+    <select id="accessory" onchange="loadTableData()">
+        <!-- Populate options dynamically based on the selected car model -->
+    </select>
 
-        <label for="accessory">Accessory:</label>
-        <select id="accessory" onchange="loadTableData()">
-            <!-- Populate options dynamically based on the selected car model -->
-        </select>
-
-        <table id="dataTable">
-            <thead>
-                <tr>
-                    <th>Car Model</th>
-                    <th>Accessory</th>
-                    <th>Description of Benefits and Features</th>
-                    <th>Description of Design</th>
-                    <th>Description of Safety Elements</th>
-                    <th>Description of Warranty</th>
-                    <th>Description of Possible Objections</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <!-- Table rows will be populated dynamically -->
-            </tbody>
-        </table>
-    </div>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Car Model</th>
+                <th>Accessory</th>
+                <th>Description of Benefits and Features</th>
+                <th>Description of Design</th>
+                <th>Description of Safety Elements</th>
+                <th>Description of Warranty</th>
+                <th>Description of Possible Objections</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table rows will be populated dynamically based on the selected car model and accessory -->
+        </tbody>
+    </table>
 
     <script src="js.js"></script>
 </body>
