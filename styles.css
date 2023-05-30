@@ -1,0 +1,36 @@
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc; /* Add a border to the table */
+  border-radius: 5px; /* Add some border radius for a modern look */
+}
+
+/* Style the table header */
+thead th {
+  background-color: #851d2f; /* Change the background color of the table headings */
+  color: #fff; /* Change the text color of the table headings */
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Style the table body */
+tbody td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Alternate row colors in the table body */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style the drop-down menus */
+select {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
