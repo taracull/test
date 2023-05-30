@@ -2,39 +2,108 @@
 <html>
 <head>
     <title>Data Table Example</title>
+    <style>
+        /* Style the container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Style the header */
+        .header {
+            background-image: url('Mazdaute.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200px;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Style the header title */
+        .header h1 {
+            margin-top: 80px;
+        }
+
+        /* Style the dropdown selectors */
+        .dropdowns {
+            margin-bottom: 20px;
+        }
+
+        /* Style the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style the table header */
+        thead th {
+            background-color: #851d2f;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* Style the table body */
+        tbody td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Alternate row colors in the table body */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Style the drop-down menus */
+        select {
+            padding: 6px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 
 <body>
-    <header style="background-image: url('Mazdaute.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 200px; text-align: center; color: white;">
-        <h1 style="margin-top: 80px;">Five Pillars Accessory Guide</h1>
-    </header>
+    <div class="container">
+        <div class="header">
+            <h1>Five Pillars Accessory Guide</h1>
+        </div>
 
-    <label for="carModel">Car Model:</label>
-    <select id="carModel" onchange="loadTableData()">
-        <!-- Populate options dynamically from the database -->
-    </select>
+        <div class="dropdowns">
+            <label for="carModel">Car Model:</label>
+            <select id="carModel" onchange="loadTableData()">
+                <!-- Populate options dynamically from the database -->
+            </select>
 
-    <label for="accessory">Accessory:</label>
-    <select id="accessory" onchange="loadTableData()">
-        <!-- Populate options dynamically based on the selected car model -->
-    </select>
+            <label for="accessory">Accessory:</label>
+            <select id="accessory" onchange="loadTableData()">
+                <!-- Populate options dynamically based on the selected car model -->
+            </select>
+        </div>
 
-    <table id="dataTable" style="border-collapse: collapse; width: 100%; text-align: center;">
-        <thead>
-            <tr style="background-color: #851d2f; color: white; font-weight: bold;">
-                <th style="border: 1px solid black; padding: 8px;">Car Model</th>
-                <th style="border: 1px solid black; padding: 8px;">Accessory</th>
-                <th style="border: 1px solid black; padding: 8px;">Description of Benefits and Features</th>
-                <th style="border: 1px solid black; padding: 8px;">Description of Design</th>
-                <th style="border: 1px solid black; padding: 8px;">Description of Safety Elements</th>
-                <th style="border: 1px solid black; padding: 8px;">Description of Warranty</th>
-                <th style="border: 1px solid black; padding: 8px;">Description of Possible Objections</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
-            <!-- Table rows will be populated dynamically based on the selected car model and accessory -->
-        </tbody>
-    </table>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Car Model</th>
+                    <th>Accessory</th>
+                    <th>Description of Benefits and Features</th>
+                    <th>Description of Design</th>
+                    <th>Description of Safety Elements</th>
+                    <th>Description of Warranty</th>
+                    <th>Description of Possible Objections</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table rows will be populated dynamically based on the selected car model and accessory -->
+            </tbody>
+        </table>
+    </div>
 
     <script src="js.js"></script>
 </body>
