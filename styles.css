@@ -1,0 +1,35 @@
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the table header */
+  thead th {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style the table body */
+  tbody td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  /* Alternate row colors in the table body */
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Style the drop-down menus */
+  select {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
