@@ -1,3 +1,21 @@
+.header {
+  background-image: url('mazdaute.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+}
+
+body {
+  font-family: 'MazdaType-Regular', sans-serif;
+}
+
+h1 {
+  font-family: 'MazdaType-Bold', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+
 /* Style the table */
 table {
   width: 100%;
