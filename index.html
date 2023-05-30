@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Table Example</title>
+</head>
+
+<body>
+    <header
+        style="background-image: url('Mazdaute.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 200px; text-align: center; color: white;">
+        <h1 style="margin-top: 80px;">Five Pillars Accessory Guide</h1>
+    </header>
+
+    <label for="carModel">Car Model:</label>
+    <select id="carModel" onchange="loadTableData()">
+        <!-- Populate options dynamically from the database -->
+    </select>
+
+    <label for="accessory">Accessory:</label>
+    <select id="accessory" onchange="loadTableData()">
+        <!-- Populate options dynamically based on the selected car model -->
+    </select>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Car Model</th>
+                <th>Accessory</th>
+                <th>Description of Benefits and Features</th>
+                <th>Description of Design</th>
+                <th>Description of Safety Elements</th>
+                <th>Description of Warranty</th>
+                <th>Description of Possible Objections</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table rows will be populated dynamically based on the selected car model and accessory -->
+        </tbody>
+    </table>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
