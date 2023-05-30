@@ -9,6 +9,12 @@
             src: url('MazdaType-Regular.otf') format('opentype');
         }
 
+        @font-face {
+            font-family: 'MazdaType-Bold';
+            src: url('MazdaType-Bold.otf') format('opentype');
+            font-weight: bold;
+        }
+
         body {
             font-family: 'MazdaType', sans-serif;
         }
@@ -72,10 +78,11 @@
 
         /* Style the header heading */
         .header-heading {
-            font-family: 'MazdaType', sans-serif;
-            font-weight: bold;
+            font-family: 'MazdaType-Bold', sans-serif;
             font-size: 36px;
             line-height: 1.5;
+            margin: 0;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -103,12 +110,4 @@
                 <tr>
                     <th>Car Model</th>
                     <th>Accessory</th>
-                    <th>Description of Benefits and Features</th>
-                    <th>Description of Design</th>
-                    <th>Description of Safety Elements</th>
-                    <th>Description of Warranty</th>
-                    <th>Description of Possible Objections</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <!-- Table rows will
+                    <th>Description of Benefits and Features
