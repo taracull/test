@@ -18,47 +18,45 @@ h1 {
 
 /* Style the table */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: 'MazdaType-Regular', sans-serif;
-  border: 1px solid #ccc; /* Add a border to the table */
-  border-radius: 5px; /* Add some border radius for a modern look */
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'MazdaType-Regular', sans-serif;
+    border: 1px solid #ccc; /* Add a border to the table */
+    border-radius: 5px; /* Add some border radius for a modern look */
 }
 
 /* Style the table header */
 thead th {
-  background-color: #851d2f; /* Change the background color of the table headings */
-  color: #fff; /* Change the text color of the table headings */
-  padding: 10px;
-  text-align: left;
-  font-weight: bold;
-  font-family: 'MazdaType-Regular', sans-serif; /* Apply the font to the table header */
+    background-color: #851d2f; /* Change the background color of the table headings */
+    color: #fff; /* Change the text color of the table headings */
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'MazdaType-Regular', sans-serif; /* Apply the font to the table header */
 }
 
 /* Style the table body */
 tbody td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-family: 'MazdaType-Regular', sans-serif; /* Apply the font to the table cells */
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: 'MazdaType-Regular', sans-serif; /* Apply the font to the table cells */
 }
 
 /* Alternate row colors in the table body */
 tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 /* Style the drop-down menus */
 select {
-  padding: 6px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .container {
-  padding: 30px;
-}
-
-select {
-  margin-bottom: 20px;
+    padding: 30px;
+    width: fit-content; /* Adjust the width to fit the content */
+    margin: 0 auto; /* Center the container horizontally */
 }
