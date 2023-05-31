@@ -4,43 +4,60 @@
 <head>
     <title>Data Table Example</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .header {
+            background-image: url('mazdaute.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 75vh;
+        }
+
+        .header-text {
+            font-family: 'MazdaType-Bold', sans-serif;
+            font-size: 72px;
+            text-align: center;
+            color: white;
+            margin-top: 20vh;
+        }
+    </style>
 </head>
 
 <body>
-<div class="container">
-        <div class="header">
-            <div class="header-text">
-                <span>Five Pillars</span><br>
-                <span>Accessories Guide</span>
-            </div>
+    <div class="header">
+        <div class="header-text">
+            <span>Five Pillars</span><br>
+            <span>Accessories Guide</span>
         </div>
+    </div>
 
-    <label for="carModel">Car Model:</label>
-    <select id="carModel" onchange="loadTableData()">
-        <!-- Populate options dynamically from the database -->
-    </select>
+    <div class="container">
+        <label for="carModel">Car Model:</label>
+        <select id="carModel" onchange="loadTableData()">
+            <!-- Populate options dynamically from the database -->
+        </select>
 
-    <label for="accessory">Accessory:</label>
-    <select id="accessory" onchange="loadTableData()">
-        <!-- Populate options dynamically based on the selected car model -->
-    </select>
+        <label for="accessory">Accessory:</label>
+        <select id="accessory" onchange="loadTableData()">
+            <!-- Populate options dynamically based on the selected car model -->
+        </select>
 
-    <table id="dataTable">
-        <thead>
-            <tr>
-                <th>Car Model</th>
-                <th>Accessory</th>
-                <th>Description of Benefits and Features</th>
-                <th>Description of Design</th>
-                <th>Description of Safety Elements</th>
-                <th>Description of Warranty</th>
-                <th>Description of Possible Objections</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
-            <!-- Table rows will be populated dynamically based on the selected car model and accessory -->
-        </tbody>
-    </table>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Car Model</th>
+                    <th>Accessory</th>
+                    <th>Description of Benefits and Features</th>
+                    <th>Description of Design</th>
+                    <th>Description of Safety Elements</th>
+                    <th>Description of Warranty</th>
+                    <th>Description of Possible Objections</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table rows will be populated dynamically based on the selected car model and accessory -->
+            </tbody>
+        </table>
+    </div>
 
     <script src="js.js"></script>
 </body>
