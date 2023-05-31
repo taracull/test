@@ -29,34 +29,31 @@
             flex-direction: column;
             align-items: center;
         }
-
-        .description {
-            margin-bottom: 1em; /* Add margin at the bottom of the description */
-        }
     </style>
 </head>
 
 <body>
+
+<div>
+    <p>Select the Car Model and Accessory below to find out how each of the Five Pillars applies</p>
+<div>
+
     <div class="header">
         <span style="text-transform: uppercase;">Five Pillars</span><br>
         <span style="text-transform: uppercase;">Accessories Guide</span>
+<br>
     </div>
 
-    <div class="description">
-        <p>Select the Car Model and Accessory below to find out how each of the Five Pillars applies</p>
-    </div>
 
-    <div class="container">
-        <label for="carModel">Car Model:</label>
-        <select id="carModel" onchange="loadTableData()">
-            <!-- Populate options dynamically from the database -->
-        </select>
+<label for="carModel">Car Model:</label>
+<select id="carModel" onchange="loadTableData()">
+  <!-- Populate options dynamically from the database -->
+</select>
 
-        <label for="accessory">Accessory:</label>
-        <select id="accessory" onchange="loadTableData()">
-            <!-- Populate options dynamically based on the selected car model -->
-        </select>
-
+<label for="accessory">Accessory:</label>
+<select id="accessory" onchange="loadTableData()">
+  <!-- Populate options dynamically based on the selected car model -->
+</select>
         <table id="dataTable">
             <thead>
                 <tr>
