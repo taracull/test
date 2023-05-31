@@ -62,3 +62,80 @@ select {
   margin-right: 10px;
   /* Add margin to create spacing between the dropdown menus */
 }
+body {
+  font-family: 'MazdaType-Regular', sans-serif;
+}
+
+h1 {
+  font-family: 'MazdaType-Bold', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+.header-text {
+  font-family: 'MazdaType-Bold', sans-serif;
+  font-size: 72px;
+  text-align: center;
+  color: white;
+  margin-top: 20vh;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'MazdaType-Regular', sans-serif;
+  border: 1px solid #ccc;
+  /* Add a border to the table */
+  border-radius: 5px;
+  /* Add some border radius for a modern look */
+}
+
+/* Style the table header */
+thead th {
+  background-color: #851d2f;
+  /* Change the background color of the table headings */
+  color: #fff;
+  /* Change the text color of the table headings */
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'MazdaType-Regular', sans-serif;
+  /* Apply the font to the table header */
+}
+
+/* Style the table body */
+tbody td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'MazdaType-Regular', sans-serif;
+  /* Apply the font to the table cells */
+}
+
+/* Alternate row colors in the table body */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style the drop-down menus */
+select {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  /* Add margin to create spacing between the dropdown menus */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the container's content to the left */
+    margin-top: 1em; /* Add margin to create space between dropdown menus and table */
+}
+
+.container .dropdowns {
+    display: flex;
+    justify-content: flex-start; /* Align the dropdowns to the left */
+    margin-bottom: 1em; /* Add margin at the bottom of the dropdowns */
+}
