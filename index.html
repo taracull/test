@@ -34,16 +34,12 @@
 </head>
 
 <body>
-    <div class="header">
-        <span style="text-transform: uppercase;">Five Pillars</span><br>
-        <span style="text-transform: uppercase;">Accessories Guide</span>
-    </div>
-
     <div>
         <p>Select the Car Model and Accessory below to find out how each of the Five Pillars applies</p>
     </div>
-
+    
     <div class="container">
+    <div class="dropdowns">
         <label for="carModel">Car Model:</label>
         <select id="carModel" onchange="loadTableData()">
             <!-- Populate options dynamically from the database -->
@@ -53,7 +49,7 @@
         <select id="accessory" onchange="loadTableData()">
             <!-- Populate options dynamically based on the selected car model -->
         </select>
-
+    </div>
         <table id="dataTable">
             <thead>
                 <tr>
