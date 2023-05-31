@@ -17,6 +17,11 @@ function loadData() {
   
         // Populate options for accessory dropdown based on selected carModel
         const accessoryDropdown = document.getElementById("accessory");
+        const defaultOption = document.createElement("option");
+        defaultOption.text = "All";
+        defaultOption.selected = true; // Set 'All' as the default selected option
+        accessoryDropdown.add(defaultOption);
+  
         carModelDropdown.addEventListener("change", () => {
           const selectedCarModel = carModelDropdown.value;
           const accessories = [
@@ -76,4 +81,3 @@ function loadData() {
   
   // Call the loadData function to populate the dropdowns and load initial table data
   loadData();
-  
