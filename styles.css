@@ -9,6 +9,21 @@ h1 {
   color: white;
 }
 
+.header {
+  background-image: url('Mazdaute.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+}
+
+.header-text {
+  font-family: 'MazdaType-Bold', sans-serif;
+  font-size: 72px;
+  text-align: center;
+  color: white;
+  margin-top: 20vh;
+}
+
 /* Style the table */
 table {
   width: 100%;
