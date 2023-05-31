@@ -1,10 +1,3 @@
-.header {
-  background-image: url('mazdaute.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 75vh;
-}
-
 body {
   font-family: 'MazdaType-Regular', sans-serif;
 }
@@ -51,4 +44,8 @@ select {
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.container {
+  padding: 30px;
 }
