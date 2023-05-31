@@ -62,22 +62,3 @@ select {
   margin-right: 10px;
   /* Add margin to create spacing between the dropdown menus */
 }
-
-.container {
-  padding: 30px;
-  width: fit-content;
-  /* Adjust the width to fit the content */
-  margin: 0 auto;
-  /* Center the container horizontally */
-  display: flex;
-  /* Use flexbox to align the dropdown menus and table on one line */
-  align-items: center;
-  /* Align items vertically in the center */
-  gap: 10px;
-  /* Add spacing between the dropdown menus and the table */
-}
-
-.container label {
-  margin-bottom: 10px;
-  /* Add margin below the labels for spacing */
-}
