@@ -8,14 +8,6 @@ h1 {
   font-weight: bold;
   color: white;
 }
-
-.header {
-  background-image: url('Mazdaute.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 75vh;
-}
-
 .header-text {
   font-family: 'MazdaType-Bold', sans-serif;
   font-size: 72px;
