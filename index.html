@@ -9,7 +9,7 @@
             background-image: url('Mazdaute.jpeg');
             background-size: cover;
             background-position: center;
-            height: 75vh;
+            height: 70vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -20,16 +20,15 @@
 
         .header span {
             font-family: 'MazdaType-Bold', sans-serif;
-            font-size: 72px;
+            font-size: 80px;
         }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <span>Five Pillars</span>
-        <br>
-        <span>Accessories Guide</span>
+        <span style="text-transform: uppercase;">Five Pillars</span><br>
+    <span style="text-transform: uppercase;">Accessories Guide</span>
     </div>
 
     <div class="container">
@@ -42,6 +41,7 @@
         <select id="accessory" onchange="loadTableData()">
             <!-- Populate options dynamically based on the selected car model -->
         </select>
+        <br>
 
         <table id="dataTable">
             <thead>
